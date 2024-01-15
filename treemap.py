@@ -18,7 +18,7 @@ for num in getdf_to_arr:
 getdf['colorgrading'] = color_list
 
 
-fig = px.treemap(getdf, path=[px.Constant("Market"), 'Sector', 'Symbol'], values='Price', color= 'colorgrading', color_continuous_scale= [[0, 'red'], [0.5, 'rgb(255, 255, 255)'], [1.0, 'rgb(0, 255, 0)']])
+fig = px.treemap(getdf, path=[px.Constant("S&P500"), 'Sector', 'Symbol'], values='Price', color= 'colorgrading', color_continuous_scale= [[0, 'red'], [0.5, 'rgb(255, 255, 255)'], [1.0, 'rgb(0, 255, 0)']])
 fig.update_traces(root_color= 'lightgreen')
 fig.update_layout(margin = dict(t = 50, l = 25, r = 25, b = 25))
 fig.show()
